@@ -1,3 +1,1 @@
-Andrew Lee's Personal Website
-
-Explore my website: https://andrewzh.com
+https://hujanais.github.io/about-me/
