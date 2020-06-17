@@ -1,1 +1,1 @@
-https://github.com/hujanais/about-me
+https://hujanais.github.io/about-me/
