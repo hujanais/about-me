@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #424242;
+  color: rgba(249, 249, 250, 0.8);
+}
+
+.div-nav {
+  height: 64px;
+  background-color: purple;
+  padding: 0px 10px;
+  position: fixed;
+}
+
+.div-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+}
+
+section {
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+}
+
+.div-home-content-1 {
+  border-color: blue;
+  border-style: solid;
+  display: flex;
+  flex-grow: 1;
+}
+
+.div-home-content-2 {
+  border-color: blue;
+  border-style: solid;
+  display: flex;
+  flex-grow: 3;
+}
+
+.div-centerme {
+  display: flex;
+  margin: auto;
+  font-size: x-large;
+}

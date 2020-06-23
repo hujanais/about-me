@@ -1,357 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 
 <head>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164545351-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <meta charset="utf-8">
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-164545351-1');
-    </script>
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="Profile page" />
     <title>Hujan Ais</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta name="description" content="Hujan Ais">
+    <meta name="author" content="SitePoint">
 
-    <!-- Import Google Icon Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Google fonts - Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+    <link rel="stylesheet" href="assets/css/home-style.css">
+    <script src='script.js'></script>
+
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a class="brand-logo" onclick="scrollToSection('intro')">Hujan Ais</a>
-                <a href="#" data-target="nav-sections" class="nav-dropdown-trigger" id="nav-dropdown-trigger"
-                    aria-label="expand navigation bar"><i class="material-icons hide-on-med-and-up">menu</i></a>
-                <ul class="right nav-sections nav-dropdown slideup" id="nav-sections">
-                    <li class="active">
-                        <a href="#intro">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#footer">Contact</a>
-                    </li>
-                </ul>
+    <!-- Navbar Area -->
+    <nav class='div-nav'>
+        <!-- Desktop Navbar-->
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+                <i class="fa fa-code" aria-hidden="true"></i>
+            </a>
+
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+
+            <ul class="right hide-on-med-and-down ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about-me">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar-->
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about-me">About</a></li>
+    </ul>
+
+    <!-- Content -->
+    <div class='div-content'>
+        <br>
+        <section #home>
+            <div class='div-home-content-1'>
+                <div class='div-centerme'>
+                    <div class='row'>
+                        <div class="row div-title">
+                            <img class="responsive-img circle" src="https://picsum.photos/id/1036/300/300">
+                        </div>
+                        <div class="row div-title">
+                            Hujan Ais
+                        </div>
+                        <div class="row div-description">
+                            Software Developer & Hobbyist
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </section>
+        <section #about-me>
+            <h1>About Me</h1>
+        </section>
+        <section #projects>
+            <h1>Projects</h1>
+        </section>
     </div>
-
-    <main class="main-container">
-        <!-- INTRO -->
-        <section id="intro" class="z-depth-1">
-            <div id="intro-background"></div>
-            <div class="intro-statement">
-                <div class="animate" data-animate="slideFromTop 0.9s ease-out">Welcome</div>
-                <button class="to-projects btn-large animate" data-animate="slideFromTop 0.7s ease-out"
-                    onclick="scrollToSection('about')">
-                    <div>Unbox <span class="material-icons">arrow_forward</span></div>
-                </button>
-            </div>
-        </section>
-
-        <div class="container">
-            <!-- ABOUT -->
-            <section id="about">
-                <div class="about-header animate" data-animate="fadeIn 1s ease">
-                    <div class="about-title">About Me</div>
-                </div>
-                <div class="about-main">
-                    <div class="row">
-                        <div class="col s6 about-description animate" data-animate="slideFromLeft 1s ease-out">
-                            <div class="bio-wrapper">
-                                <div class="bio-title">Who am I?</div>
-                                <div class="bio-body">I'm a junior in highschool who has an intrest in programming. I
-                                    spend my free time developing
-                                    various web applications and learning new technologies.</div>
-                            </div>
-                            <div class="current-wrapper">
-                                <div class="current-title">What am I up to now?</div>
-                                <div class="current-body">I am currently developing my personal website and learning
-                                    SCSS along the way.</div>
-                            </div>
-                        </div>
-                        <div class="col s6 skills-description animate" data-animate="slideFromRight 1s ease-out">
-                            <div class="skills-title">
-                                Recent Technologies
-                            </div>
-                            <div class="row skills-list-col">
-                                <div class="col s3">
-                                    <div class="skill">
-                                        <img src="assets/img/techs/html5.png" alt="html5">
-                                        <div>HTML</div>
-                                    </div>
-                                </div>
-                                <div class="col s3">
-                                    <div class="skill">
-                                        <img src="assets/img/techs/javascript.png" alt="javascript">
-                                        <div>Javascript</div>
-                                    </div>
-                                </div>
-                                <div class="col s3">
-                                    <div class="skill">
-                                        <img src="assets/img/techs/css3.png" alt="CSS/SCSS">
-                                        <div>(S)CSS</div>
-                                    </div>
-                                </div>
-                                <div class="col s3">
-                                    <div class="skill">
-                                        <img src="assets/img/techs/bootstrap.png" alt="bootstrap">
-                                        <div>Bootstrap</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row skills-list-col">
-                                <div class="col s3">
-                                    <div class="skill">
-                                        <img src="assets/img/techs/nodejs.png" alt="nodejs">
-                                        <div>Node.js</div>
-                                    </div>
-                                </div>
-                                <div class="col s3">
-                                    <div class="skill">
-                                        <img src="assets/img/techs/mongodb.png" alt="mongodb">
-                                        <div>MongoDB</div>
-                                    </div>
-                                </div>
-                                <div class="col s3">
-                                    <div class="skill">
-                                        <img src="assets/img/techs/heroku.png" alt="heroku">
-                                        <div>Heroku</div>
-                                    </div>
-                                </div>
-                                <div class="col s3">
-                                    <div class="skill">
-                                        <img src="assets/img/techs/github.png" alt="github">
-                                        <div>Github</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- PROJECTS -->
-        <section id="projects">
-            <div class="container">
-                <div class="projects-header animate" data-animate="fadeIn 1s ease">
-                    <div>Projects</div>
-                </div>
-                <div class="feature">
-                    <div class="feature-project animate" data-animate="0.5 slideFromBottom">
-                        <div class="project-row">
-                            <div class="feature-img-wrapper animate" data-animate="0.5s slideFromBottom">
-                                <div class="feature-img-container">
-                                    <img class="feature-img responsive-img" alt="">
-                                    <div class="overlay">
-                                        <div class="feature-caption">
-                                            <div class="feature-center">
-                                                <div class="feature-title">Acaply</div>
-                                                <div class="feature-short-desc">Internet Forum</div>
-                                                <div class="feature-btn">
-                                                    <button class="btn waves-effect wave-light"
-                                                        onclick="displayModal(0)">More
-                                                        Info</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-img-wrapper animate" data-animate="0.5s slideFromBottom">
-                                <div class="feature-img-container">
-                                    <img class="feature-img responsive-img" alt="">
-                                    <div class="overlay">
-                                        <div class="feature-caption">
-                                            <div class="feature-center">
-                                                <div class="feature-title">Covid-19 API</div>
-                                                <div class="feature-short-desc">Global WHO Data</div>
-                                                <div class="feature-btn">
-                                                    <button class="btn waves-effect wave-light "
-                                                        onclick="displayModal(1)">More
-                                                        Info</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-img-wrapper animate" data-animate="0.5s slideFromBottom"
-                                data-offset="70%">
-                                <div class="feature-img-container">
-                                    <img class="feature-img responsive-img" alt="">
-                                    <div class="overlay">
-                                        <div class="feature-caption">
-                                            <div class="feature-center">
-                                                <div class="feature-title">Covid-19 Dashboard</div>
-                                                <div class="feature-short-desc">Visualize the Data</div>
-                                                <div class="feature-btn">
-                                                    <button class="btn waves-effect wave-light "
-                                                        onclick="displayModal(2)">More
-                                                        Info</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-img-wrapper animate" data-animate="0.5s slideFromBottom"
-                                data-offset="70%">
-                                <div class="feature-img-container">
-                                    <img class="feature-img responsive-img" alt="">
-                                    <div class="overlay">
-                                        <div class="feature-caption">
-                                            <div class="feature-center">
-                                                <div class="feature-title">Newton Pavements</div>
-                                                <div class="feature-short-desc">City Road Conditions</div>
-                                                <div class="feature-btn">
-                                                    <button class="btn waves-effect wave-light "
-                                                        onclick="displayModal(3)">More
-                                                        Info</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-img-wrapper animate" data-animate="0.5s slideFromBottom"
-                                data-offset="80%">
-                                <div class="feature-img-container">
-                                    <img class="feature-img responsive-img" alt="">
-                                    <div class="overlay">
-                                        <div class="feature-caption">
-                                            <div class="feature-center">
-                                                <div class="feature-title">NNHS Programming</div>
-                                                <div class="feature-short-desc">Club Website</div>
-                                                <div class="feature-btn">
-                                                    <button class="btn waves-effect wave-light "
-                                                        onclick="displayModal(4)">More
-                                                        Info</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-img-wrapper animate" data-animate="0.5s slideFromBottom"
-                                data-offset="80%">
-                                <div class="feature-img-container">
-                                    <img class="feature-img responsive-img" alt="">
-                                    <div class="overlay">
-                                        <div class="feature-caption">
-                                            <div class="feature-center">
-                                                <div class="feature-title">Redefined</div>
-                                                <div class="feature-short-desc">Flashcards & Translation</div>
-                                                <div class="feature-btn">
-                                                    <button class="btn waves-effect wave-light "
-                                                        onclick="displayModal(5)">More
-                                                        Info</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="archive"></div>
-                </div>
-        </section>
-        <!-- FOOTER -->
-        <section id="footer">
-            <div class="contact">
-                <div class="contact-header animate" data-animate="fadeIn 1s ease">
-                    <div>Contact Me</div>
-                </div>
-                <div class="container">
-                    <div class="contact-caption animate" data-animate="fadeIn 1s ease" data-offset="60%">
-                        <span>Have a question or just want to say hi?</span> <br>
-                        <span>Feel free to drop me a message!</span>
-                    </div>
-                    <div class="contact-email">
-                        <a href="mailto:teikmenglee@yahoo.com"
-                            class="waves-effect waves-light btn-large tooltipped animate"
-                            data-animate="scaleIn 1.75s ease-out" data-offset="80%" data-position="top">Get in Touch</a>
-                    </div>
-                </div>
-            </div>
-            <footer>
-                <div class="footer-icons">
-                    <a href="https://github.com/hujanais" aria-label="Go to my Github."><i class="fa fa-github"></i></a>
-                    <a href="mailto:teikmenglee@yahoo.com" class="tooltipped" data-position="top"
-                        data-tooltip="teikmenglee@yahoo.com" aria-label="Send me an email."><i
-                            class="fa fa-envelope"></i></a>
-                </div>
-                <div class="footer-copyright">
-                    Design inspired by <a href="https://github.com/pillious">my son</a>
-                </div>
-            </footer>
-        </section>
-    </main>
-
-    <!-- Project Modal -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-img-wrapper">
-                <img class="modal-img responsive-img" id="modal-img" alt="">
-            </div>
-            <div class="modal-caption">
-                <div class="modal-title" id="modal-title"></div>
-                <div class="modal-desc" id="modal-desc"></div>
-                <div class="modal-tech" id="modal-tech"></div>
-                <div class="moadl-btns">
-                    <button class="btn waves-effect wave-light" id="modal-github"><i class="fa fa-github"></i>
-                        Github</button>
-                    <button class="btn waves-effect wave-light" id="modal-site"><i class="fa fa-link"></i> View
-                        Site</button>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <a class="modal-close waves-effect waves-green btn-flat close-modal" aria-label="Close"><i
-                    class="fa fa-times"></i></a>
-        </div>
-    </div>
-
-    <!-- Jquery (Must import Jquery before Materialize) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <!-- Jquery Waypoints -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <!-- Materialize JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Particlesjs -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-    <!-- Local Javscript -->
-    <script src="assets/scripts/index.js"></script>
-    <script src="assets/scripts/projects.js"></script>
-    <script src="assets/scripts/animations.js"></script>
 </body>
 
 </html>
