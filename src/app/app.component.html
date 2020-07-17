@@ -1,0 +1,13 @@
+<div class='div-container'>
+  <mat-toolbar>
+    <span>LOGO</span>
+    <span class="span-spacer"></span>
+    <a class='a-link-button' mat-button [routerLink]="[ '/' ]">Home</a>
+    <a class='a-link-button' mat-button [routerLink]="[ '/projects' ]">Projects</a>
+    <a class='a-link-button' mat-button [routerLink]="[ '/contact' ]">Contact</a>
+  </mat-toolbar>
+
+  <div class='div-router'>
+    <router-outlet></router-outlet>
+  </div>
+</div>
