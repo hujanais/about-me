@@ -13,7 +13,7 @@ $background-color: #212121;
   }
 
   .mat-card {
-    background-color: #424242;
+    background-color: #332940;
     margin: 5px;
   }
 
@@ -25,6 +25,7 @@ $background-color: #212121;
 
     .div-project-title-left {
       flex-grow: 1;
+      font-size: large;
     }
 
     .div-project-title-right {
@@ -35,11 +36,16 @@ $background-color: #212121;
 
   .mat-card-subtitle {
     color: white;
-    opacity: 0.86;
+    opacity: 0.6;
   }
 
   .mat-card-content {
-    color: #bb86fc;
+    color: white;
+    opacity: 0.6;
+  }
+
+  .button-accent {
+    color: yellow;
     opacity: 0.86;
   }
 }
