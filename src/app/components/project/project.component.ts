@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { CovidSummaryComponent } from '../covid-summary/covid-summary.component';
+import { DryerPiComponent } from '../dryer-pi/dryer-pi.component';
+import { CovidMobilityComponent } from '../covid-mobility/covid-mobility.component';
 
 @Component({
   selector: 'app-project',
@@ -15,7 +17,13 @@ export class ProjectComponent implements OnInit {
   ngOnInit() {
   }
 
-  openDialog() {
-    const dialogRef = this.matDialog.open(CovidSummaryComponent);
+  openDialog(title: string) {
+    if (title === 'COVID-NG') {
+      this.matDialog.open(CovidSummaryComponent);
+    } else if (title === 'COVID-MOBILITY') {
+      this.matDialog.open(CovidMobilityComponent);
+    } else if (title === 'DRYER-PI') {
+      this.matDialog.open(DryerPiComponent);
+    }
   }
 }

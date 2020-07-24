@@ -13,6 +13,8 @@ import { ProjectComponent } from './components/project/project.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { CovidSummaryComponent } from './components/covid-summary/covid-summary.component';
+import { DryerPiComponent } from './components/dryer-pi/dryer-pi.component';
+import { CovidMobilityComponent } from './components/covid-mobility/covid-mobility.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,14 @@ import { CovidSummaryComponent } from './components/covid-summary/covid-summary.
     ProjectComponent,
     ContactComponent,
     HomeComponent,
-    CovidSummaryComponent
+    CovidSummaryComponent,
+    DryerPiComponent,
+    CovidMobilityComponent
   ],
   entryComponents: [
-    CovidSummaryComponent
+    CovidSummaryComponent,
+    DryerPiComponent,
+    CovidMobilityComponent
   ],
   imports: [
     BrowserModule,
