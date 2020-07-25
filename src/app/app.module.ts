@@ -19,6 +19,7 @@ import { FizzBuzzComponent } from './components/fizz-buzz/fizz-buzz.component';
 import { ProjectsMlComponent } from './components/projects-ml/projects-ml.component';
 import { CartPoleComponent } from './components/cart-pole/cart-pole.component';
 import { TicTacToeComponent } from './components/tic-tac-toe/tic-tac-toe.component';
+import { ShowcaseComponent } from './components/showcase/showcase.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TicTacToeComponent } from './components/tic-tac-toe/tic-tac-toe.compone
     FizzBuzzComponent,
     ProjectsMlComponent,
     CartPoleComponent,
-    TicTacToeComponent
+    TicTacToeComponent,
+    ShowcaseComponent
   ],
   entryComponents: [
     CovidSummaryComponent,
