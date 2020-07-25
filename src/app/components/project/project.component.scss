@@ -6,6 +6,11 @@ $toolbar-height: 60px;
   background-color: $background-color;
   padding: 10px;
 
+  button,
+  a {
+    color: yellow;
+  }
+
   .div-projects-title {
     width: 100%;
     margin: 5px;

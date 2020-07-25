@@ -1,12 +1,17 @@
 $background-color: #212121;
 
 .div-showcase-container {
-    height: 100%;
-    background-color: $background-color;
-    padding: 10px;
+  height: 100%;
+  background-color: $background-color;
+  padding: 10px;
 
-    .div-showcase-content {
-        color: white;
-        opacity: 0.86;
-    }
+  button,
+  a {
+    color: yellow;
+  }
+
+  .div-showcase-content {
+    color: white;
+    opacity: 0.86;
+  }
 }
