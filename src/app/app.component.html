@@ -1,9 +1,12 @@
 <div class='div-container'>
   <mat-toolbar>
-    <span>LOGO</span>
+    <a class='a-link-button' mat-button [routerLink]="[ '/' ]">
+      <mat-icon>home</mat-icon>
+    </a>
     <span class="span-spacer"></span>
     <a class='a-link-button' mat-button [routerLink]="[ '/' ]">Home</a>
-    <a class='a-link-button' mat-button [routerLink]="[ '/projects' ]">Projects</a>
+    <a class='a-link-button' mat-button [routerLink]="[ '/projects' ]">Web</a>
+    <a class='a-link-button' mat-button [routerLink]="[ '/projects-ml' ]">ML</a>
     <a class='a-link-button' mat-button [routerLink]="[ '/contact' ]">Contact</a>
   </mat-toolbar>
 

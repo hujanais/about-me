@@ -15,6 +15,10 @@ import { HomeComponent } from './components/home/home.component';
 import { CovidSummaryComponent } from './components/covid-summary/covid-summary.component';
 import { DryerPiComponent } from './components/dryer-pi/dryer-pi.component';
 import { CovidMobilityComponent } from './components/covid-mobility/covid-mobility.component';
+import { FizzBuzzComponent } from './components/fizz-buzz/fizz-buzz.component';
+import { ProjectsMlComponent } from './components/projects-ml/projects-ml.component';
+import { CartPoleComponent } from './components/cart-pole/cart-pole.component';
+import { TicTacToeComponent } from './components/tic-tac-toe/tic-tac-toe.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +28,19 @@ import { CovidMobilityComponent } from './components/covid-mobility/covid-mobili
     HomeComponent,
     CovidSummaryComponent,
     DryerPiComponent,
-    CovidMobilityComponent
+    CovidMobilityComponent,
+    FizzBuzzComponent,
+    ProjectsMlComponent,
+    CartPoleComponent,
+    TicTacToeComponent
   ],
   entryComponents: [
     CovidSummaryComponent,
     DryerPiComponent,
-    CovidMobilityComponent
+    CovidMobilityComponent,
+    FizzBuzzComponent,
+    CartPoleComponent,
+    TicTacToeComponent,
   ],
   imports: [
     BrowserModule,
