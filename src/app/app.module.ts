@@ -9,6 +9,7 @@ import { MatButtonModule, MatCardModule } from '@angular/material';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatVideoModule } from 'mat-video';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { ProjectComponent } from './components/project/project.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -54,7 +55,8 @@ import { ShowcaseComponent } from './components/showcase/showcase.component';
     MatDialogModule,
     MatIconModule,
     BrowserAnimationsModule,
-    MatVideoModule
+    MatVideoModule,
+    MatSidenavModule
   ],
   providers: [
   ],
