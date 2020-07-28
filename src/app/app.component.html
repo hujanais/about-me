@@ -2,14 +2,22 @@
   <a class='a-link-button' mat-button [routerLink]="[ '/' ]">
     <mat-icon>home</mat-icon>
   </a>
+
   <span class="span-spacer"></span>
-  <div>
+  <div class='div-menu-icon' fxShow="true" fxHide.gt-sm="true">
+    <a href="#" (click)="drawer.toggle()">
+      <mat-icon class='div-mat-icon'>more_vert</mat-icon>
+    </a>
+  </div>
+
+  <div fxShow="true" fxHide.lt-md="true">
     <a class='a-link-button' mat-button [routerLink]="[ '/' ]">Home</a>
     <a class='a-link-button' mat-button [routerLink]="[ '/projects' ]">Web</a>
     <a class='a-link-button' mat-button [routerLink]="[ '/projects-ml' ]">ML</a>
     <a class='a-link-button' mat-button [routerLink]="[ '/showcase' ]">Showcase</a>
     <a class='a-link-button' mat-button [routerLink]="[ '/contact' ]">Contact</a>
   </div>
+
 </mat-toolbar>
 
 <mat-drawer-container class="example-container" autosize>
@@ -22,9 +30,6 @@
   </mat-drawer>
 
   <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button>
     <div class='div-router'>
       <router-outlet></router-outlet>
     </div>

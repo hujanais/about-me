@@ -11,6 +11,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatVideoModule } from 'mat-video';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { ProjectComponent } from './components/project/project.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -50,6 +51,7 @@ import { ShowcaseComponent } from './components/showcase/showcase.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FlexLayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
