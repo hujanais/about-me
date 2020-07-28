@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { CovidSummaryComponent } from '../covid-summary/covid-summary.component';
 import { DryerPiComponent } from '../dryer-pi/dryer-pi.component';
 import { CovidMobilityComponent } from '../covid-mobility/covid-mobility.component';
