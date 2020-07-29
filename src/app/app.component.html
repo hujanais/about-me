@@ -4,13 +4,13 @@
   </a>
 
   <span class="span-spacer"></span>
-  <div class='div-menu-icon' fxShow="true" fxHide.gt-sm="true">
-    <a href="#" (click)="drawer.toggle()">
+  <div class='div-menu-icon' fxShow="true" fxHide.gt-xs="true">
+    <a mat-button (click)="drawer.toggle()">
       <mat-icon class='div-mat-icon'>more_vert</mat-icon>
     </a>
   </div>
 
-  <div fxShow="true" fxHide.lt-md="true">
+  <div fxShow="true" fxHide.lt-sm="true">
     <a class='a-link-button' mat-button [routerLink]="[ '/' ]">Home</a>
     <a class='a-link-button' mat-button [routerLink]="[ '/projects' ]">Web</a>
     <a class='a-link-button' mat-button [routerLink]="[ '/projects-ml' ]">ML</a>
@@ -22,11 +22,11 @@
 
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
-    <div><a class='a-link-button' mat-button [routerLink]="[ '/' ]">Home</a></div>
-    <div><a class='a-link-button' mat-button [routerLink]="[ '/projects' ]">Web</a></div>
-    <div><a class='a-link-button' mat-button [routerLink]="[ '/projects-ml' ]">ML</a></div>
-    <div><a class='a-link-button' mat-button [routerLink]="[ '/showcase' ]">Showcase</a></div>
-    <div><a class='a-link-button' mat-button [routerLink]="[ '/contact' ]">Contact</a></div>
+    <div><a class='a-link-button' mat-button [routerLink]="[ '/' ]" (click)="drawer.close()">Home</a></div>
+    <div><a class='a-link-button' mat-button [routerLink]="[ '/projects' ]" (click)="drawer.close()">Web</a></div>
+    <div><a class='a-link-button' mat-button [routerLink]="[ '/projects-ml' ]" (click)="drawer.close()">ML</a></div>
+    <div><a class='a-link-button' mat-button [routerLink]="[ '/showcase' ]" (click)="drawer.close()">Showcase</a></div>
+    <div><a class='a-link-button' mat-button [routerLink]="[ '/contact' ]" (click)="drawer.close()">Contact</a></div>
   </mat-drawer>
 
   <div class="example-sidenav-content">
