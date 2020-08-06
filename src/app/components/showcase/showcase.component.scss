@@ -14,5 +14,19 @@ $background-color: #212121;
     color: white;
     opacity: 0.86;
     padding: 10px;
+
+    .div-image-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      img {
+        margin: auto;
+        @media (min-width: 801px) {
+          /* tablet, landscape iPad, lo-res laptops ands desktops */
+          width: 800px;
+        }
+      }
+    }
   }
 }
