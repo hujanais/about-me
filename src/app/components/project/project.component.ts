@@ -5,6 +5,7 @@ import { DryerPiComponent } from '../dryer-pi/dryer-pi.component';
 import { CovidMobilityComponent } from '../covid-mobility/covid-mobility.component';
 import { FizzBuzzComponent } from '../fizz-buzz/fizz-buzz.component';
 import { CartPoleComponent } from '../cart-pole/cart-pole.component';
+import { SensehatComponent } from '../sensehat/sensehat.component';
 
 @Component({
   selector: 'app-project',
@@ -30,6 +31,8 @@ export class ProjectComponent implements OnInit {
       this.matDialog.open(FizzBuzzComponent);
     } else if (title === 'CART-POLE') {
       this.matDialog.open(CartPoleComponent);
+    } else if (title === 'SENSE-HAT') {
+      this.matDialog.open(SensehatComponent);
     }
   }
 }

@@ -24,6 +24,7 @@ import { ProjectsMlComponent } from './components/projects-ml/projects-ml.compon
 import { CartPoleComponent } from './components/cart-pole/cart-pole.component';
 import { TicTacToeComponent } from './components/tic-tac-toe/tic-tac-toe.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
+import { SensehatComponent } from './components/sensehat/sensehat.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ShowcaseComponent } from './components/showcase/showcase.component';
     ProjectsMlComponent,
     CartPoleComponent,
     TicTacToeComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
+    SensehatComponent
   ],
   entryComponents: [
     CovidSummaryComponent,
