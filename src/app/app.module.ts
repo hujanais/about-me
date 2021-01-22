@@ -25,6 +25,8 @@ import { CartPoleComponent } from './components/cart-pole/cart-pole.component';
 import { TicTacToeComponent } from './components/tic-tac-toe/tic-tac-toe.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { SensehatComponent } from './components/sensehat/sensehat.component';
+import { ProjectsIotComponent } from './components/projects-iot/projects-iot.component';
+import { Esp8622Component } from './components/esp8622/esp8622.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { SensehatComponent } from './components/sensehat/sensehat.component';
     CartPoleComponent,
     TicTacToeComponent,
     ShowcaseComponent,
-    SensehatComponent
+    SensehatComponent,
+    ProjectsIotComponent,
+    Esp8622Component,
   ],
   entryComponents: [
     CovidSummaryComponent,

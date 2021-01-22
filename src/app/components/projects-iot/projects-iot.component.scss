@@ -1,0 +1,59 @@
+$background-color: #212121;
+$toolbar-height: 60px;
+
+.div-projects-container {
+  height: 100%;
+  background-color: $background-color;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  button,
+  a {
+    color: yellow;
+  }
+
+  .div-projects-title {
+    width: 100%;
+    margin: 5px;
+    color: white;
+    opacity: 0.86;
+  }
+
+  .mat-card {
+    background-color: #332940;
+    margin: 5px;
+  }
+
+  .mat-card-title {
+    color: white;
+    opacity: 0.86;
+    display: flex;
+    flex-direction: row;
+
+    .div-project-title-left {
+      flex-grow: 1;
+      font-size: large;
+    }
+
+    .div-project-title-right {
+      font-size: small;
+      color: #bb86fc;
+    }
+  }
+
+  .mat-card-subtitle {
+    color: white;
+    opacity: 0.6;
+  }
+
+  .mat-card-content {
+    color: white;
+    opacity: 0.6;
+  }
+
+  .button-accent {
+    color: yellow;
+    opacity: 0.86;
+  }
+}
