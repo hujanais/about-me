@@ -27,6 +27,7 @@ import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { SensehatComponent } from './components/sensehat/sensehat.component';
 import { ProjectsIotComponent } from './components/projects-iot/projects-iot.component';
 import { Esp8622Component } from './components/esp8622/esp8622.component';
+import { ProjectsDesktopComponent } from './components/projects-desktop/projects-desktop.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { Esp8622Component } from './components/esp8622/esp8622.component';
     SensehatComponent,
     ProjectsIotComponent,
     Esp8622Component,
+    ProjectsDesktopComponent,
   ],
   entryComponents: [
     CovidSummaryComponent,

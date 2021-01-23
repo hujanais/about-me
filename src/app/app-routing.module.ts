@@ -7,11 +7,13 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectsMlComponent } from './components/projects-ml/projects-ml.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { ProjectsIotComponent } from './components/projects-iot/projects-iot.component';
+import { ProjectsDesktopComponent } from './components/projects-desktop/projects-desktop.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'projects', component: ProjectComponent },
   { path: 'iot', component: ProjectsIotComponent },
+  { path: 'desktop', component: ProjectsDesktopComponent },
   { path: 'projects-ml', component: ProjectsMlComponent },
   { path: 'showcase', component: ShowcaseComponent },
   { path: 'contact', component: ContactComponent },
